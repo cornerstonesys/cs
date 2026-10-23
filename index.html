@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cornerstone Systems | Stronger Systems. Bigger Growth. Together.</title>
+  <meta name="description" content="The Cornerstone Systems helps small businesses and social-media sellers move from manual selling to organized, scalable business systems: e-commerce, ERP, CRM, automation, and integration.">
+
+  <!-- Font: Inter (clean sans-serif). The site still works with system fonts if this fails to load. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Skip link for keyboard and screen-reader users -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="#home" class="logo" aria-label="The Cornerstone Systems — back to top">
+        <!-- Logo mark: a stacked block with a gold cornerstone -->
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <rect x="2" y="2" width="36" height="36" rx="3" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <path d="M2 26h24v12" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <rect x="4" y="28" width="20" height="8" rx="1" fill="#B68A45"/>
+        </svg>
+        <span class="logo-text">The Cornerstone <strong>Systems</strong></span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Main">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-gold btn-sm">Book a Consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Stronger Systems. Bigger Growth. Together.</p>
+          <h1>From Manual Selling to Smarter Business Systems.</h1>
+          <p class="lead">We help growing businesses organize orders, manage inventory, connect with customers, and build online stores with systems designed to scale.</p>
+          <div class="btn-row">
+            <a href="#solutions" class="btn btn-gold">Explore Our Solutions</a>
+            <a href="#contact" class="btn btn-outline-light">Book a Consultation</a>
+          </div>
+        </div>
+
+        <!-- Hero visual: storefront connected to orders, inventory, and customers (pure SVG, no image download needed) -->
+        <div class="hero-visual">
+          <svg viewBox="0 0 480 400" role="img" aria-labelledby="hero-svg-title hero-svg-desc">
+            <title id="hero-svg-title">Connected business system</title>
+            <desc id="hero-svg-desc">An online storefront in the center connected by lines to three panels: an order dashboard, inventory records, and customer information.</desc>
+
+            <!-- connecting lines -->
+            <g stroke="#B68A45" stroke-width="2" stroke-dasharray="5 6" fill="none" class="flow-lines">
+              <path d="M240 175 V110"/>
+              <path d="M180 245 H120"/>
+              <path d="M300 245 H360"/>
+            </g>
+
+            <!-- Order dashboard (top) -->
+            <g transform="translate(160 20)">
+              <rect width="160" height="90" rx="8" fill="#2B343B" stroke="#3C464E"/>
+              <text x="14" y="24" fill="#F7F4EE" font-size="12" font-weight="600">Orders</text>
+              <rect x="14" y="36" width="132" height="10" rx="3" fill="#3C464E"/>
+              <rect x="14" y="36" width="88" height="10" rx="3" fill="#B68A45"/>
+              <rect x="14" y="54" width="132" height="10" rx="3" fill="#3C464E"/>
+              <rect x="14" y="54" width="54" height="10" rx="3" fill="#B68A45" opacity=".7"/>
+              <rect x="14" y="72" width="132" height="10" rx="3" fill="#3C464E"/>
+              <rect x="14" y="72" width="110" height="10" rx="3" fill="#B68A45" opacity=".45"/>
+            </g>
+
+            <!-- Storefront (center) -->
+            <g transform="translate(170 175)">
+              <rect width="140" height="140" rx="10" fill="#F7F4EE"/>
+              <rect width="140" height="24" rx="10" fill="#B68A45"/>
+              <rect y="14" width="140" height="10" fill="#B68A45"/>
+              <circle cx="14" cy="12" r="3" fill="#20272D"/>
+              <circle cx="24" cy="12" r="3" fill="#20272D"/>
+              <text x="70" y="44" text-anchor="middle" fill="#20272D" font-size="11" font-weight="700">Online Store</text>
+              <rect x="14" y="56" width="50" height="40" rx="4" fill="#E6DFD2"/>
+              <rect x="76" y="56" width="50" height="40" rx="4" fill="#E6DFD2"/>
+              <rect x="14" y="102" width="34" height="6" rx="2" fill="#697078"/>
+              <rect x="76" y="102" width="34" height="6" rx="2" fill="#697078"/>
+              <rect x="14" y="116" width="112" height="14" rx="4" fill="#20272D"/>
+              <text x="70" y="126" text-anchor="middle" fill="#F7F4EE" font-size="8">Place Order</text>
+            </g>
+
+            <!-- Inventory (left) -->
+            <g transform="translate(10 200)">
+              <rect width="110" height="100" rx="8" fill="#2B343B" stroke="#3C464E"/>
+              <text x="12" y="22" fill="#F7F4EE" font-size="12" font-weight="600">Inventory</text>
+              <g fill="#697078">
+                <rect x="12" y="34" width="50" height="6" rx="2"/><rect x="74" y="34" width="22" height="6" rx="2" fill="#B68A45"/>
+                <rect x="12" y="50" width="50" height="6" rx="2"/><rect x="74" y="50" width="22" height="6" rx="2" fill="#B68A45"/>
+                <rect x="12" y="66" width="50" height="6" rx="2"/><rect x="74" y="66" width="22" height="6" rx="2" fill="#B68A45"/>
+                <rect x="12" y="82" width="50" height="6" rx="2"/><rect x="74" y="82" width="22" height="6" rx="2" fill="#B68A45"/>
+              </g>
+            </g>
+
+            <!-- Customers (right) -->
+            <g transform="translate(360 200)">
+              <rect width="110" height="100" rx="8" fill="#2B343B" stroke="#3C464E"/>
+              <text x="12" y="22" fill="#F7F4EE" font-size="12" font-weight="600">Customers</text>
+              <g>
+                <circle cx="22" cy="42" r="8" fill="#B68A45"/><rect x="36" y="38" width="60" height="7" rx="2" fill="#697078"/>
+                <circle cx="22" cy="64" r="8" fill="#B68A45" opacity=".7"/><rect x="36" y="60" width="50" height="7" rx="2" fill="#697078"/>
+                <circle cx="22" cy="86" r="8" fill="#B68A45" opacity=".45"/><rect x="36" y="82" width="56" height="7" rx="2" fill="#697078"/>
+              </g>
+            </g>
+
+            <!-- connection nodes -->
+            <g fill="#B68A45">
+              <circle cx="240" cy="110" r="5"/><circle cx="120" cy="245" r="5"/><circle cx="360" cy="245" r="5"/>
+            </g>
+
+            <!-- decorative cornerstone outline -->
+            <path d="M440 380 H360 V350" stroke="#B68A45" stroke-width="2" fill="none" opacity=".5"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROBLEM ============ -->
+    <section class="section section-cream" id="problem">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">The challenge</p>
+          <h2>Growing Sales Shouldn't Mean Growing Chaos.</h2>
+          <p>When orders come in through Facebook, Instagram, TikTok, and messaging apps, keeping track of everything by hand quickly becomes overwhelming.</p>
+        </div>
+
+        <div class="grid grid-4">
+          <article class="problem-card">
+            <span class="problem-num">01</span>
+            <h3>Lost orders in chat messages</h3>
+            <p>Orders get buried between conversations, and some are missed or forgotten.</p>
+          </article>
+          <article class="problem-card">
+            <span class="problem-num">02</span>
+            <h3>Inventory that's hard to update</h3>
+            <p>Stock counts in notebooks or spreadsheets fall behind what's actually on the shelf.</p>
+          </article>
+          <article class="problem-card">
+            <span class="problem-num">03</span>
+            <h3>Repetitive questions and follow-ups</h3>
+            <p>The same questions about prices, stock, and delivery are answered again and again.</p>
+          </article>
+          <article class="problem-card">
+            <span class="problem-num">04</span>
+            <h3>Hours spent checking payments</h3>
+            <p>Matching payment screenshots to orders takes time and is easy to get wrong.</p>
+          </article>
+        </div>
+
+        <div class="callout">
+          <p><strong>Organized systems help.</strong> When orders, stock, customers, and payments live in one structured place, you spend less time searching and double-checking, and more time serving customers and growing your business.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Our services</p>
+          <h2>Practical systems for every part of your business.</h2>
+        </div>
+
+        <div class="grid grid-services">
+          <!-- Each "Learn More" link jumps to the contact form and pre-selects that service (see script.js) -->
+          <article class="service-card">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l1.5-5h15L21 9M3 9h18M3 9v11h18V9M9 20v-6h6v6"/></svg>
+            <h3>E-commerce Development</h3>
+            <p>Build an online store where customers can browse products, place orders, and access essential business information.</p>
+            <a href="#contact" class="text-link" data-service="ecommerce">Learn More <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="service-card">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            <h3>ERP Implementation</h3>
+            <p>Organize inventory, orders, purchasing, and operational workflows in one structured system.</p>
+            <a href="#contact" class="text-link" data-service="erp">Learn More <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="service-card">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5"/><path d="M16 4.5a3.5 3.5 0 010 7M18 14.8c1.8.8 3 2.6 3.5 5.2"/></svg>
+            <h3>CRM Implementation</h3>
+            <p>Manage customer information, inquiries, follow-ups, and customer relationships more effectively.</p>
+            <a href="#contact" class="text-link" data-service="crm">Learn More <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="service-card">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 01-14.3 4.9M4 12a8 8 0 0114.3-4.9"/><path d="M18.5 3v4.2h-4.2M5.5 21v-4.2h4.2"/></svg>
+            <h3>Business Automation</h3>
+            <p>Reduce repetitive tasks and manual data entry through suitable automation workflows.</p>
+            <a href="#contact" class="text-link" data-service="automation">Learn More <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="service-card">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="2.5"/><circle cx="19" cy="5" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M7.3 11l9.4-5M7.3 13l9.4 5"/></svg>
+            <h3>Systems Integration</h3>
+            <p>Connect business tools and improve the flow of information between different parts of the business.</p>
+            <a href="#contact" class="text-link" data-service="integration">Learn More <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW WE WORK ============ -->
+    <section class="section section-cream" id="process">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">How we work</p>
+          <h2>A clear, step-by-step process.</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-step">
+            <span class="step-dot">1</span>
+            <h3>Discover</h3>
+            <p>Understand the business, its challenges, and current workflow.</p>
+          </li>
+          <li class="timeline-step">
+            <span class="step-dot">2</span>
+            <h3>Design</h3>
+            <p>Map the process and identify the right solution.</p>
+          </li>
+          <li class="timeline-step">
+            <span class="step-dot">3</span>
+            <h3>Implement</h3>
+            <p>Build or configure the website and business systems.</p>
+          </li>
+          <li class="timeline-step">
+            <span class="step-dot">4</span>
+            <h3>Improve</h3>
+            <p>Test, train, support, and refine the system as the business grows.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SOLUTIONS / GROWTH STAGES ============ -->
+    <section class="section section-dark" id="solutions">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Solutions for growing businesses</p>
+          <h2>We meet you where you are, and build from there.</h2>
+          <p>Every business grows in stages. We help you take the next step with systems that fit your size and budget.</p>
+        </div>
+
+        <!-- Stages rise like steps, echoing the "foundation" idea -->
+        <div class="stages">
+          <article class="stage stage-1">
+            <span class="stage-label">Stage 1</span>
+            <h3>Manual Selling</h3>
+            <p>Orders arrive through messages and spreadsheets.</p>
+          </article>
+          <article class="stage stage-2">
+            <span class="stage-label">Stage 2</span>
+            <h3>Organized Operations</h3>
+            <p>Orders, inventory, and customer information are structured.</p>
+          </article>
+          <article class="stage stage-3">
+            <span class="stage-label">Stage 3</span>
+            <h3>Connected Systems</h3>
+            <p>The online store and internal business workflows work together.</p>
+          </article>
+          <article class="stage stage-4">
+            <span class="stage-label">Stage 4</span>
+            <h3>Scalable Growth</h3>
+            <p>More efficient processes support increasing order volume.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">About us</p>
+          <h2>Built on a Strong Foundation.</h2>
+          <p>The Cornerstone Systems is a practical technology partner for small businesses and online sellers. We help you choose and set up the systems that suit your needs and your budget, without the confusing jargon.</p>
+          <p>We start with how your business actually works today, then build tools around that, so your team can use them from day one and keep improving as you grow.</p>
+        </div>
+
+        <ul class="values">
+          <li><span class="value-mark" aria-hidden="true"></span><div><h3>Practical solutions</h3><p>Tools that solve real problems, not features you'll never use.</p></div></li>
+          <li><span class="value-mark" aria-hidden="true"></span><div><h3>Affordable implementation</h3><p>Options sized for small businesses and growing sellers.</p></div></li>
+          <li><span class="value-mark" aria-hidden="true"></span><div><h3>Clear communication</h3><p>Plain explanations at every step, so you always know what's happening.</p></div></li>
+          <li><span class="value-mark" aria-hidden="true"></span><div><h3>Built around your workflow</h3><p>Systems shaped by how your business really runs.</p></div></li>
+          <li><span class="value-mark" aria-hidden="true"></span><div><h3>Long-term improvement</h3><p>Support and refinement as your business scales.</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CALL TO ACTION ============ -->
+    <section class="cta">
+      <div class="container cta-inner">
+        <h2>Ready to Build a Better-Organized Business?</h2>
+        <p>Let's identify what's slowing your business down and explore a practical system to help you move forward.</p>
+        <a href="#contact" class="btn btn-gold">Let's Talk About Your Business</a>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-cream" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's talk about your business.</h2>
+          <p>Tell us a little about how you sell today and what you'd like to improve. We'll get back to you to arrange a consultation.</p>
+
+          <ul class="contact-list">
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 006 6L16 13l5 2v4a2 2 0 01-2 2A16 16 0 013 5a2 2 0 012-2"/></svg>
+              <a href="tel:+639086181068">+63 908 618 1068</a>
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h-2.5A3.5 3.5 0 009 6.5V9H6v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h2z"/></svg>
+              <a href="https://www.facebook.com/dlsitconsulting/" target="_blank" rel="noopener">facebook.com/dlsitconsulting</a>
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+              <!-- PLACEHOLDER: replace with your real business email -->
+              <span class="placeholder">[your-email@example.com]</span>
+            </li>
+            <li>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0114 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+              <!-- PLACEHOLDER: replace with your office address or service area -->
+              <span class="placeholder">[Business address / service area]</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <!-- NOTE: This form is front-end only. Connect it to a backend or a form service before it can send messages. -->
+          <div class="form-notice" role="note">
+            <strong>Note:</strong> This form is not yet connected to an email or form service. Until it is, please contact us by phone or Facebook.
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+              <p class="error" id="name-error"></p>
+            </div>
+            <div class="field">
+              <label for="business">Business name</label>
+              <input type="text" id="business" name="business" autocomplete="organization">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="email">Email address <span class="req" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+              <p class="error" id="email-error"></p>
+            </div>
+            <div class="field">
+              <label for="contact-method">Preferred contact method</label>
+              <select id="contact-method" name="contact-method">
+                <option value="email">Email</option>
+                <option value="phone">Phone call</option>
+                <option value="messenger">Facebook Messenger</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="solution">What kind of solution do you need? <span class="req" aria-hidden="true">*</span></label>
+            <select id="solution" name="solution" required>
+              <option value="">Please choose…</option>
+              <option value="ecommerce">E-commerce website</option>
+              <option value="erp">ERP (inventory, orders, purchasing)</option>
+              <option value="crm">CRM (customers and follow-ups)</option>
+              <option value="automation">Business automation</option>
+              <option value="integration">Systems integration</option>
+              <option value="unsure">Not sure yet — I'd like advice</option>
+            </select>
+            <p class="error" id="solution-error"></p>
+          </div>
+
+          <div class="field">
+            <label for="message">Message <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" rows="5" placeholder="How do you take orders today? What would you like to improve?" required></textarea>
+            <p class="error" id="message-error"></p>
+          </div>
+
+          <button type="submit" class="btn btn-dark btn-block">Send Message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo logo-light">
+          <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+            <rect x="2" y="2" width="36" height="36" rx="3" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M2 26h24v12" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            <rect x="4" y="28" width="20" height="8" rx="1" fill="#B68A45"/>
+          </svg>
+          <span class="logo-text">The Cornerstone <strong>Systems</strong></span>
+        </a>
+        <p>We help small businesses and social-media sellers turn manual operations into organized, efficient, and scalable online businesses.</p>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">E-commerce Development</a></li>
+          <li><a href="#services">ERP Implementation</a></li>
+          <li><a href="#services">CRM Implementation</a></li>
+          <li><a href="#services">Business Automation</a></li>
+          <li><a href="#services">Systems Integration</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#process">How We Work</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="tel:+639086181068">+63 908 618 1068</a></li>
+          <li><a href="https://www.facebook.com/dlsitconsulting/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><span class="placeholder">[your-email@example.com]</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> The Cornerstone Systems. All rights reserved.</p>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
